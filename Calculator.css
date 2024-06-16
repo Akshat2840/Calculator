@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    background-color: #e3f9ff;
+    font-family: "Poppins","sans-serif";
+}
+
+h1{
+    font-size: 60px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    padding: 20px;
+    height: 70vh;
+    width: 45vb;
+    border-radius: 10px;
+    background-color: #3a4452;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(6 , 1fr);
+}
+
+#io{
+    grid-area: 1 / 1 / 2 / 5;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    text-align: right;
+    box-shadow: none;
+    font-size: 50px;
+    color: white;
+}
+
+#equal{
+    grid-area: 6 / 3 / 7 / 5;
+}
+
+.calculator input{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #3a4452;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(145, 150, 169, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+
+input:hover,input:active{
+    outline: none;
+    width: 200% ease-in-out;
+    box-shadow: 0 0.5em 0.5em -0.1em rgb(91, 230, 255);
+    transition: 600ms;
+    transform: scale(-0.25em,0.25em);
+}
+
+input:not(:hover),input:not(:active){
+    transition: 600ms ease-in-out;
+   }
